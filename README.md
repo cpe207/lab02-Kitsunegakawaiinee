@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/sdSmclLW)
 # Lab 02 : My Portfolio
 
 ให้นักศึกษาสร้างเว็บไซต์ Portfolio ซึ่งแสดงประวัติคร่าว ๆ ได้แก่ ประวัติส่วนตัว ทักษะที่มีอยู่ ประสบการณ์ งานอดิเรก และช่องทางการติดต่อ โดยให้ใช้ความรู้เรื่อง HTML และ CSS 
