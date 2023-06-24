@@ -3,7 +3,184 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style_index.css">
+    <title>My portfolio</title>
   </head>
-  <body></body>
+  <body>
+
+
+    <h1>
+      <i>My portfolio</i>
+    </h1>
+    <p>
+      <img align="middle" src="https://media.tenor.com/e046riJYwWwAAAAC/bocchi-bocchi-the-rock.gif">
+    </p>
+
+    <h1>
+      Korawit Piboon
+    </h1>
+
+    <br>
+
+    <div class="box_aqua">
+      <p>
+        Hello! My nickname is Skot.
+      </p>
+    </div>
+
+    <br>
+
+    <h1>My skill</h1>
+
+    <!-- skill -->
+
+    <div class="block_center">
+      <div class="skill_bar_block">
+        <div class="box_aqua">
+          <h2>
+            Coding Skills
+          </h2>
+
+          <p id="for_skill_font">
+            html
+          </p>
+          <div class = "container">
+            <div class = "skill html">37%</div>
+          </div>
+
+          <p id="for_skill_font">
+            css
+          </p>
+          <div class = "container">
+            <div class = "skill css">26%</div>
+          </div>
+      
+          <p id="for_skill_font">
+            c#
+          </p>
+          <div class = "container">
+            <div class = "skill cs">30%</div>
+          </div>
+
+          <p id="for_skill_font">
+            Python
+          </p>
+          <div class = "container">
+            <div class = "skill Py">50%</div>
+          </div>
+
+          <p id="for_skill_font">
+            C++
+          </p>
+          <div class = "container">
+            <div class = "skill cpp">55%</div>
+          </div>
+
+          <p id="for_skill_font">
+            java
+          </p>
+          <div class = "container">
+            <div class = "skill java">25%</div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="skill_bar_block">
+        <div class="box_aqua">
+          <h2>
+            Other Skills
+          </h2>
+
+          <p id="for_skill_font">
+            Video Editor
+          </p>
+          <div class = "container">
+            <div class = "skill video">65%</div>
+          </div>
+
+          <p id="for_skill_font">
+            Word
+          </p>
+          <div class = "container">
+            <div class = "skill word">55%</div>
+          </div>
+      
+          <p id="for_skill_font">
+            VScode
+          </p>
+          <div class = "container">
+            <div class = "skill vscode">40%</div>
+          </div>
+
+          <p id="for_skill_font">
+            Excel
+          </p>
+          <div class = "container">
+            <div class = "skill cs">25%</div>
+          </div>
+
+          <p id="for_skill_font">
+            Aduino IDE
+          </p>
+          <div class = "container">
+            <div class = "skill aduino_ide">11%</div>
+          </div>
+
+          <p id="for_skill_font">
+            Unity
+          </p>
+          <div class = "container">
+            <div class = "skill Unity">5%</div>
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+
+    <p id="set_button_color">
+      <a href="index.html" id="set_button_color">home</a>
+      |
+      <a href="Experience.html" id="set_button_color">experience</a>
+      |
+      <a href="contact.html" id="set_button_color">contact</a>
+    </p>
+
+    <button onclick="topFunction()" id="top_btn" title="Go to top">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiWsGZH264tvcE5S1k7ZOZ1XBpTBcj5-Xf1A&usqp=CAU" width="100%" height="100%" alt="Top Button Image">
+    </button>
+
+    <script>
+        let mybutton = document.getElementById("top_btn");
+
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() 
+        {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
+          {
+            mybutton.style.display = "block";
+          } 
+          else 
+          {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        function topFunction() 
+        {
+          const scrollToTop = () => 
+          {
+            const c = document.documentElement.scrollTop || document.body.scrollTop;
+            if (c > 0) 
+            {
+              window.requestAnimationFrame(scrollToTop);
+              window.scrollTo(0, c - c / 8);
+            }
+          };
+          scrollToTop();
+        }
+    </script>
+  </body>
 </html>
