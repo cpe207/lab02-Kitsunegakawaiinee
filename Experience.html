@@ -1,44 +1,173 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <style>
-    .skill-bar {
-      width: 200px;
-      background-color: lightgray;
-      height: 20px;
-      margin-bottom: 10px;
-    }
-    
-    .skill-bar-fill {
-      height: 100%;
-      background-color: green;
-    }
-    
-    .skill-bar-container {
-      display: inline-block;
-      margin-right: 10px;
-    }
-    
-    .center-container {
-      text-align: center;
-    }
-  </style>
-</head>
-<body>
-  <div class="center-container">
-    <div class="skill-bar-container">
-      <div class="skill-bar">
-        <div class="skill-bar-fill" style="width: 80%;"></div>
-      </div>
-      <span>80%</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style_experience.css">
+    <title>My Experience</title>
+  </head>
+  <body>
+    <div>
+      <h1 class="head_div">
+        My Experience
+      </h1>
     </div>
-    
-    <div class="skill-bar-container">
-      <div class="skill-bar">
-        <div class="skill-bar-fill" style="width: 60%;"></div>
-      </div>
-      <span>60%</span>
+
+    <br>
+    <br>
+    <br>
+
+    <div id="box_left_css">
+      <h2>
+      ~~~~~~~~~~My Project~~~~~~~~~~
+      </h2>
     </div>
-  </div>
-</body>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="box_css">
+      <h2>
+        HTML
+      <h2>
+      
+      <div id="set_left">
+        -<a href=""> Introduce Myself</a>
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="box_css">
+      <h2>
+        Unity
+      <h2>
+      <div id="set_left">
+        -<a href=""> Game Test</a>
+        <br>
+        -<a href=""> Where Is My Friend</a>
+        <br>
+        -<a href=""> No Name Game</a>
+
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="box_css">
+      <h2>
+        Python
+      <h2>
+      <div id="set_left">
+        -<a href=""> Auto click</a>
+        <br>
+        -<a href=""> Auto click for my game</a>
+        <br>
+        -<a href=""> Countdown to shutdown</a>
+
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="box_css">
+      <h2>
+        C++
+      <h2>
+      <div id="set_left">
+        -<a href=""> Genshin DMG cal (Ganyu)</a>
+        <br>
+        -<a href=""> Random Food Store (if else)</a>
+
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div id="box_left_css">
+      <h2>
+      ~~~~~~~~~~My Hobby~~~~~~~~~~
+      </h2>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="box_css">
+      <div id="set_left">
+        <ul type="square" class="set_ul_font">
+          <li>Video Editor</li>
+          <li>Coding Practice</li>
+          <li>Game</li>
+          <ul>
+            <li>Genshin Impact</li>
+            <li>Honkai Starail</li>
+            <li>Secret Games •̀⩊•́</li>
+          </ul>
+          <li>Anime</li>
+          <li>Light Novel</li>
+          <li>Visual Novel</li>
+          <li>Manga</li>
+        </ul>
+
+      </div>
+    </div>
+
+
+
+    <p id="set_button_color">
+      <a href="index.html" id="set_button_color">home</a>
+      |
+      <a href="Experience.html" id="set_button_color">experience</a>
+      |
+      <a href="contact.html" id="set_button_color">contact</a>
+    </p>
+
+    <button onclick="topFunction()" id="top_btn" title="Go to top">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiWsGZH264tvcE5S1k7ZOZ1XBpTBcj5-Xf1A&usqp=CAU" width="100%" height="100%" alt="Top Button Image">
+    </button>
+
+    <script>
+        let mybutton = document.getElementById("top_btn");
+
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() 
+        {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
+          {
+            mybutton.style.display = "block";
+          } 
+          else 
+          {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        function topFunction() 
+        {
+          const scrollToTop = () => 
+          {
+            const c = document.documentElement.scrollTop || document.body.scrollTop;
+            if (c > 0) 
+            {
+              window.requestAnimationFrame(scrollToTop);
+              window.scrollTo(0, c - c / 8);
+            }
+          };
+          scrollToTop();
+        }
+    </script>
+
+  </body>
 </html>
