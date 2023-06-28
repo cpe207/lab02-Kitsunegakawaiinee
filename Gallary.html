@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style_gallary.css">
+
     <title>Document</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
@@ -18,11 +21,127 @@
     ></script>
 
 </head>
+
 <body>
 
-  test
+  <body>
+    <div>
+      <h1 class="head_div">
+        Gallary
+      </h1>
+    </div>
 
-</body>
+    <br>
+    <br>
+    <br>
+
+    <div class="container flex-warp">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="Myself.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">My self 1</h5>
+              <p class="card-text">The only one picture that I found</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="Myself.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">My self 2</h5>
+              <p class="card-text">The only one picture that I found</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="Myself.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">My self 3</h5>
+              <p class="card-text">The only one picture that I found</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="card">
+            <img src="Myself.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">My self 4</h5>
+              <p class="card-text">The only one picture that I found</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="Myself.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">My self 5</h5>
+              <p class="card-text">The only one picture that I found</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="Myself.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">My self 6</h5>
+              <p class="card-text">The only one picture that I found</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </body>
+
+  <br>
+  <br>
+
+  <button onclick="topFunction()" id="top_btn" title="Go to top">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiWsGZH264tvcE5S1k7ZOZ1XBpTBcj5-Xf1A&usqp=CAU" width="100%" height="100%" alt="Top Button Image">
+  </button>
+
+  <script>
+    let mybutton = document.getElementById("top_btn");
+
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() 
+    {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
+      {
+        mybutton.style.display = "block";
+      } 
+      else 
+      {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    function topFunction() 
+    {
+      const scrollToTop = () => 
+      {
+        const c = document.documentElement.scrollTop || document.body.scrollTop;
+        if (c > 0) 
+        {
+          window.requestAnimationFrame(scrollToTop);
+          window.scrollTo(0, c - c / 8);
+        }
+      };
+      scrollToTop();
+    }
+</script>
+
+
+
 <footer class="bg-secondary text-white text-center">
     <!-- Grid container -->
     <div class="container p-4">
