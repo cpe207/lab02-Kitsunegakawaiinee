@@ -56,7 +56,7 @@ p
     border-radius: 10px;
 }
 
-.container
+.my_container
 {
     width: 100%;
     background-color: #ddd;
@@ -212,5 +212,10 @@ p
     font-size: 18px;
     text-shadow: #2196F3;
     color:#98f2ec;
+}
+
+.font_size_in_flex
+{
+    font-size: 35px;
 }
 
